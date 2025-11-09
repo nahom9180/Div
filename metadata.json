@@ -1,0 +1,5 @@
+{
+  "name": "Goodman Bible",
+  "description": "A versatile, static Bible application built with React and Tailwind CSS. Featuring a clean interface for reading and navigating scripture.",
+  "requestFramePermissions": []
+}

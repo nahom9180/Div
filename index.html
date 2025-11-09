@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodman Bible</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              'brown': {
+                '50': '#fdfcfb',      // Almost white, warm tint
+                '100': '#f4f1ef',     // Light background elements
+                '200': '#e9e4e1',     // Borders, dividers
+                '300': '#d9d2ce',     // UI controls
+                '400': '#b9aca4',     // Medium text
+                '500': '#9f8f87',     //
+                '600': '#84736a',     // Accent color
+                '700': '#695a52',     // Main text
+                '800': '#50443d',     //
+                '900': '#3a2e29',     // Darker elements
+                '950': '#1c1614',     // Dark mode background
+              },
+              'accent': {
+                  'light': '#84736a', // brown-600
+                  'dark': '#b9aca4'   // brown-400
+              }
+            },
+            fontFamily: {
+              serif: ['Georgia', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brown-50 text-brown-700 font-sans dark:bg-brown-950 dark:text-brown-200 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
